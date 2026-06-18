@@ -30,11 +30,16 @@ Use this command to create comprehensive, SEO-optimized long-form blog content.
 - Keep under 60 characters for SERP display
 - Promise clear value to reader
 
-#### 2. Introduction (150-200 words)
+#### 2. Introduction (150-250 words)
 
-**CRITICAL: The Hook (First 1-2 Sentences)**
+**CRITICAL: Direct Answer First (AI Search Optimization)**
 
-The opening hook is the most important element. A strong hook can boost reader retention by 30%. NEVER open with a generic definition or statement like "X is..." or "When it comes to..."
+For any "best/top/how" query, the first 1-2 sentences MUST directly answer the question. AI scrapers (ChatGPT, Perplexity, Gemini) pull from the top of the page. Don't bury the answer behind narrative.
+
+**Example — "best project management tools":**
+> The best project management tools in 2026 are Asana, Monday, and ClickUp — each built for different team sizes and workflows. Here's how they compare.
+
+After the direct answer, use a hook to keep human readers engaged.
 
 **Choose ONE hook type for each article:**
 
@@ -54,7 +59,28 @@ The opening hook is the most important element. A strong hook can boost reader r
 - **Keyword**: Include primary keyword in first 100 words
 - **Credibility**: Establish why you/this article is authoritative
 
-#### 3. Main Body (1800-2500+ words)
+#### 3. Key Takeaways Block (After Introduction)
+
+**REQUIRED: TL;DR block immediately after the introduction, before the first H2 body section.**
+
+This gets pulled into AI-generated summaries and helps both AI and human readers quickly assess the article's value.
+
+```markdown
+> **Key Takeaways**
+> - [Core finding or recommendation #1]
+> - [Core finding or recommendation #2]
+> - [Core finding or recommendation #3]
+> - [Core finding or recommendation #4 if needed]
+> - [Core finding or recommendation #5 if needed]
+```
+
+**Rules:**
+- 3-5 bullet points
+- Each bullet is a standalone claim with specifics (numbers, names, outcomes)
+- NOT a table of contents — these are the article's actual conclusions
+- Written after the full article is drafted (so the takeaways are accurate)
+
+#### 4. Main Body (1800-2500+ words)
 - **Logical Flow**: Organize sections in clear, progressive order
 - **H2 Sections**: 4-7 main sections covering comprehensive topic scope
 - **H3 Subsections**: Break complex sections into digestible pieces
@@ -62,23 +88,24 @@ The opening hook is the most important element. A strong hook can boost reader r
 - **Depth**: Provide thorough, actionable information at each point
 - **Data**: Reference statistics and studies to support claims
 - **Visuals**: Note where images, screenshots, or graphics enhance understanding
+- **YouTube Embed**: Include at least one relevant YouTube video (prefer your own channel, then authoritative third-party) — AI models cross-reference video and article content
 - **Lists**: Use bulleted or numbered lists for scannability
 - **Formatting**: Bold key concepts, use short paragraphs (2-4 sentences MAX)
 
-**REQUIRED: Mini-Stories (2-3 per article)**
+**Real-World Examples (use when they add value, not by formula)**
 
-Research shows we're 22x more likely to remember facts wrapped in stories. Every article MUST include 2-3 mini-scenarios with:
-- A **specific person** (use names, even if fictional: "Sarah," "Mike," "The team at Acme Corp")
-- A **concrete situation** with details (dates, numbers, specifics)
-- A **clear outcome** that illustrates the point
+Concrete examples make advice actionable. Use them when a point needs illustration, but do NOT force fictional scenarios with made-up names (Sarah, Mike, Marcus, etc.) — this is one of the most recognizable AI writing patterns.
 
-**Example mini-story (aim for 50-150 words each):**
-> "When Marcus launched his SaaS product in March 2024, he chose the cheapest hosting plan he could find, $5/month seemed like a no-brainer. Six months later, his app hit 10,000 active users. That's when he discovered the hidden bandwidth fees buried in his provider's terms. His $5/month plan suddenly became $89/month. Worse, migrating mid-growth meant a 3-week gap in analytics that cost him a $2,000 partnership deal. The 'savings' from cheap hosting cost him over $3,000."
+**What to use instead:**
+- **Generic but real situations**: "A 10-foot wall needs 15 to 20 feet of curtain panels" — specific without being fictional
+- **Industry knowledge**: Reference real trends, common mistakes, or practical tradeoffs you'd see in practice
+- **Direct experience framing**: Write as if the brand has seen this firsthand — "We've seen customers..." or simply state the insight without attribution
+- **Real data**: Use actual statistics, search trends, or product specs instead of invented narratives
 
-**Place mini-stories:**
-- One in the introduction or early section (to hook readers)
-- One in the middle (to re-engage skimmers)
-- One near the conclusion (to reinforce the main point)
+**What to avoid:**
+- Fictional characters with names and backstories ("When Sarah renovated her apartment...")
+- Invented timelines and dollar amounts designed to dramatize a point
+- The "problem → discovery → cost of mistake" story arc (classic AI pattern)
 
 **REQUIRED: Contextual CTAs (2-3 per article)**
 
@@ -97,7 +124,7 @@ Don't just put one CTA at the end. Embedded CTAs get 121% more conversions than 
 - First CTA should appear within the first 500 words
 - Never use generic "Click here" text
 
-#### 4. Conclusion (150-200 words)
+#### 5. Conclusion (150-200 words)
 - **Recap**: Summarize 3-5 key takeaways
 - **Action**: Provide clear next steps for reader
 - **CTA**: Include relevant call-to-action (free trial, resource download, etc.)
@@ -120,11 +147,12 @@ Don't just put one CTA at the end. Embedded CTAs get 121% more conversions than 
 - Link to product/service pages where natural
 - Use descriptive anchor text with keywords
 
-#### External Linking (2-3 links)
-- Link to authoritative sources for statistics
-- Reference industry research or studies
-- Link to tools or resources mentioned
-- Build credibility with quality sources
+#### External Linking (2-3 links when relevant)
+- **Cite original sources, not blogs**: If referencing a statistic or study, link to the original report, dataset, or institution — not a competing blog that reported on it
+- **No "According to [Source]" patterns**: Do not write "According to Homes & Gardens..." or "As reported by Apartment Therapy..." in body text. This reads like content aggregation, not expertise. If the data matters, state the fact directly and hyperlink the source on the relevant phrase
+- **Brand blogs should demonstrate authority, not defer to it**: The article should read like the brand is the expert. External links support claims quietly (as hyperlinked references), not loudly (as named attributions in prose)
+- **When to use external links**: Original research, government/institutional data, manufacturer specs, or industry reports. Not competing editorial content
+- **Placement**: Hyperlink a natural phrase in the sentence rather than calling out the source by name. Example: "Searches for wall hanging tapestry [jumped 516%](url) in early 2026" — not "According to Homes & Gardens, searches jumped 516%"
 
 #### Readability
 - Keep sentences under 25 words average
@@ -186,7 +214,16 @@ Word Count: [actual word count]
 - [ ] Proper H2/H3 hierarchy
 - [ ] Readability optimized
 
-### 4. Engagement Checklist
+### 4. AI Search Optimization Checklist
+- [ ] **Direct answer**: First 1-2 sentences directly answer the target query
+- [ ] **Key Takeaways**: TL;DR block with 3-5 specific bullet points after introduction
+- [ ] **Meta description**: Directly answers the query (not just a teaser)
+- [ ] **YouTube embed**: At least one relevant video embedded
+- [ ] **FAQ prompts**: Questions written in natural language people would type into ChatGPT
+- [ ] **One idea per section**: Each H2/H3 focuses on a single clear concept
+- [ ] **Author attribution**: Named author in frontmatter
+
+### 5. Engagement Checklist
 - [ ] **Hook**: Opens with question, scenario, statistic, or bold statement (NOT generic definition)
 - [ ] **APP Formula**: Introduction includes Agree, Promise, Preview elements
 - [ ] **Mini-stories**: 2-3 specific scenarios with names, details, and outcomes
@@ -233,26 +270,80 @@ The scrubber will display statistics:
 1. Write article → Save to drafts/article-name-2025-10-31.md
 2. IMMEDIATELY run: /scrub drafts/article-name-2025-10-31.md
 3. Verify scrubbing statistics
-4. THEN proceed with optimization agents below
+4. Run /humanizer on the scrubbed file (see Automatic Humanization below)
+5. THEN proceed with optimization agents below
 ```
 
 This ensures all published content is free of AI signatures before any further processing.
 
-## Automatic Agent Execution
-After saving the main article, run these two optimization agents in parallel:
+## Automatic Humanization
 
-### 1. Meta Creator Agent
+**CRITICAL**: After scrubbing, immediately run the humanizer to remove deeper AI writing patterns that the scrubber does not catch.
+
+### Why This Matters
+The content scrubber handles surface-level indicators (invisible Unicode, em-dashes, filler phrases). The humanizer addresses structural and stylistic AI patterns: overly parallel sentence structures, uniform paragraph lengths, mechanical transitions, hedging language, and other patterns cataloged in Wikipedia's "Signs of AI writing." These are the patterns that make content feel robotic even when the words themselves are fine.
+
+### Humanization Process
+1. **Invoke Humanizer**: Run `/humanizer` on the scrubbed article file
+2. **Automatic Execution**: This should happen automatically after scrubbing, before SEO agents
+3. **Scope**: Humanize the main article file only (not meta or analysis files)
+
+### What Gets Fixed
+- Overly symmetrical sentence and paragraph structures
+- Formulaic transitions ("Additionally," "Furthermore," "Moreover,")
+- Uniform paragraph lengths (all paragraphs roughly the same size)
+- Hedging and qualification patterns ("It's important to note," "It's worth mentioning")
+- Over-structured content (every section follows the same template)
+- Missing contractions and conversational markers
+- Predictable rhythm (every sentence medium-length, no variation)
+- Generic summarizing conclusions that repeat the introduction
+
+### Pipeline Order
+```
+Write → Scrub (surface cleanup) → Humanize (structural/stylistic) → SEO Agents (optimization)
+```
+
+The scrubber and humanizer serve different purposes and must both run. Scrubbing removes watermarks and mechanical indicators. Humanizing makes the prose read like a knowledgeable person wrote it.
+
+## Automatic Agent Execution
+After saving the main article, immediately execute optimization agents:
+
+### 1. Content Analyzer Agent (NEW!)
+- **Agent**: `content-analyzer`
+- **Input**: Full article, meta elements, keywords, SERP data (if available)
+- **Output**: Comprehensive analysis covering search intent, keyword density, content length comparison, readability score, and SEO quality rating
+- **File**: `drafts/content-analysis-[topic-slug]-[YYYY-MM-DD].md`
+
+This new agent uses 5 specialized analysis modules:
+- Search intent analysis
+- Keyword density & clustering
+- Content length vs competitors
+- Readability scoring (Flesch scores)
+- SEO quality rating (0-100)
+
+### 2. SEO Optimizer Agent
+- **Agent**: `seo-optimizer`
+- **Input**: Full article content
+- **Output**: SEO optimization report and suggestions
+- **File**: `drafts/seo-report-[topic-slug]-[YYYY-MM-DD].md`
+
+### 3. Meta Creator Agent
 - **Agent**: `meta-creator`
 - **Input**: Article content and primary keyword
-- **Output**: Multiple meta title/description options (3 titles, 3 descriptions, with recommended pairing)
+- **Output**: Multiple meta title/description options
 - **File**: `drafts/meta-options-[topic-slug]-[YYYY-MM-DD].md`
 
-### 2. Keyword & Link Optimizer Agent
+### 4. Internal Linker Agent
+- **Agent**: `internal-linker`
+- **Input**: Article content
+- **Output**: Specific internal linking recommendations
+- **File**: `drafts/link-suggestions-[topic-slug]-[YYYY-MM-DD].md`
+
+### 5. Keyword Mapper Agent
 - **Agent**: `keyword-mapper`
-- **Input**: Article content, target keywords, and @context/internal-links-map.md
-- **Output**: Combined keyword placement analysis AND internal link audit with specific fixes
+- **Input**: Article and target keywords
+- **Output**: Keyword placement analysis and improvements
 - **File**: `drafts/keyword-analysis-[topic-slug]-[YYYY-MM-DD].md`
-- **Scope**: This single agent covers keyword density, placement, missing keyword opportunities, internal link coverage, missing link suggestions, and anchor text quality. After receiving the report, apply the top fixes directly to the article.
 
 ## Automatic Quality Loop
 
